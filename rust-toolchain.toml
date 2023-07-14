@@ -1,0 +1,4 @@
+[toolchain]
+# keep this in sync with the Embassy version used
+channel = "nightly-2023-06-28"
+targets = ["thumbv6m-none-eabi"]
