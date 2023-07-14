@@ -2,3 +2,18 @@
 name = "getting-started"
 version = "0.1.0"
 edition = "2021"
+
+
+[dependencies]
+cortex-m-rt = "0.7.3"
+panic-halt = "0.2.0"
+
+[dependencies.embassy-executor]
+git = "https://github.com/embassy-rs/embassy.git"
+rev = "d979841"
+features = ["nightly", "arch-cortex-m", "executor-thread"]
+
+[dependencies.embassy-rp]
+git = "https://github.com/embassy-rs/embassy.git"
+rev = "d979841"
+features = ["critical-section-impl"]
