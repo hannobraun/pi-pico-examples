@@ -12,12 +12,16 @@ defmt-rtt = "0.4.0"
 [dependencies.embassy-executor]
 git = "https://github.com/embassy-rs/embassy.git"
 rev = "d979841"
-features = ["nightly", "arch-cortex-m", "executor-thread"]
+features = ["nightly", "arch-cortex-m", "executor-thread", "integrated-timers"]
 
 [dependencies.embassy-rp]
 git = "https://github.com/embassy-rs/embassy.git"
 rev = "d979841"
-features = ["critical-section-impl"]
+features = ["critical-section-impl", "time-driver"]
+
+[dependencies.embassy-time]
+git = "https://github.com/embassy-rs/embassy.git"
+rev = "d979841"
 
 [dependencies.panic-probe]
 version = "0.3.1"
