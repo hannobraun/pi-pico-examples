@@ -8,7 +8,6 @@ edition = "2021"
 cortex-m-rt = "0.7.3"
 defmt = "0.3.5"
 defmt-rtt = "0.4.0"
-panic-halt = "0.2.0"
 
 [dependencies.embassy-executor]
 git = "https://github.com/embassy-rs/embassy.git"
@@ -19,3 +18,7 @@ features = ["nightly", "arch-cortex-m", "executor-thread"]
 git = "https://github.com/embassy-rs/embassy.git"
 rev = "d979841"
 features = ["critical-section-impl"]
+
+[dependencies.panic-probe]
+version = "0.3.1"
+features = ["print-defmt"]
