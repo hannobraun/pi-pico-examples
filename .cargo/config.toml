@@ -2,4 +2,5 @@
 target = "thumbv6m-none-eabi"
 
 [target.thumbv6m-none-eabi]
+runner = "probe-rs run --chip=RP2040"
 rustflags = ["-C", "link-args=-Tlink.x -Tlink-rp.x"]
