@@ -304,20 +304,20 @@ checksum = "7fcaabb2fef8c910e7f4c7ce9f67a1283a1715879a7c230ca9d6d1ae31f16d91"
 [[package]]
 name = "embassy-embedded-hal"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "embassy-sync",
  "embassy-time",
  "embedded-hal 0.2.7",
- "embedded-hal 1.0.0-alpha.11",
+ "embedded-hal 1.0.0-rc.1",
  "embedded-storage",
  "nb 1.1.0",
 ]
 
 [[package]]
 name = "embassy-executor"
-version = "0.2.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+version = "0.3.0"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "atomic-polyfill 1.0.3",
  "cortex-m",
@@ -331,12 +331,12 @@ dependencies = [
 [[package]]
 name = "embassy-futures"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 
 [[package]]
-name = "embassy-hal-common"
+name = "embassy-hal-internal"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "cortex-m",
  "critical-section",
@@ -345,8 +345,8 @@ dependencies = [
 
 [[package]]
 name = "embassy-macros"
-version = "0.2.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+version = "0.2.1"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -357,7 +357,7 @@ dependencies = [
 [[package]]
 name = "embassy-rp"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "atomic-polyfill 1.0.3",
  "cfg-if",
@@ -366,10 +366,11 @@ dependencies = [
  "critical-section",
  "embassy-embedded-hal",
  "embassy-futures",
- "embassy-hal-common",
+ "embassy-hal-internal",
  "embassy-sync",
  "embassy-time",
  "embedded-hal 0.2.7",
+ "embedded-io",
  "embedded-storage",
  "fixed",
  "futures",
@@ -385,19 +386,18 @@ dependencies = [
 [[package]]
 name = "embassy-sync"
 version = "0.2.0"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "cfg-if",
  "critical-section",
- "embedded-io",
  "futures-util",
  "heapless",
 ]
 
 [[package]]
 name = "embassy-time"
-version = "0.1.2"
-source = "git+https://github.com/embassy-rs/embassy.git?rev=d979841#d979841f17721c344142d36bc56f79bea50a158f"
+version = "0.1.3"
+source = "git+https://github.com/embassy-rs/embassy.git?rev=a05afc5#a05afc54262e180fbbbe5b9369246c5275a5c4a3"
 dependencies = [
  "atomic-polyfill 1.0.3",
  "cfg-if",
@@ -419,15 +419,15 @@ dependencies = [
 
 [[package]]
 name = "embedded-hal"
-version = "1.0.0-alpha.11"
+version = "1.0.0-rc.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7724ebabcadfeb15920571dd727bc8ccde8586e52f2890bdb8182fdf42c3ff2"
+checksum = "2894bc2f0457b8ca3d6b8ab8aad64d9337583672494013457f86c5a9146c0e22"
 
 [[package]]
 name = "embedded-io"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ef1a6892d9eef45c8fa6b9e0086428a2cca8491aca8f787c534a3d6d0bcb3ced"
+checksum = "658bbadc628dc286b9ae02f0cb0f5411c056eb7487b72f0083203f115de94060"
 
 [[package]]
 name = "embedded-storage"
