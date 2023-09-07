@@ -3,8 +3,8 @@
 ## About
 
 This repository contains examples of Embedded Rust applications. It is the
-companion repository to a website that soon to be published, with each example
-being associated with an article on that site.
+companion repository to a website that is soon to be published, with each
+example being associated with an article on that site.
 
 ## License
 
