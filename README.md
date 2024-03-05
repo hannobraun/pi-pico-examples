@@ -3,9 +3,8 @@
 ## About
 
 This repository contains examples of Embedded Rust applications using the
-Raspberry Pi Pico. It is the companion repository to
-[my website](https://www.hannobraun.com/), with each example corresponding to an
-article on the site.
+Raspberry Pi Pico. Well, it was supposed to. Then my plans changed, and now it
+only contains one example for that one article I wrote.
 
 ## License
 
