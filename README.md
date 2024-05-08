@@ -2,9 +2,12 @@
 
 ## About
 
-This repository contains examples of Embedded Rust applications using the
-Raspberry Pi Pico. Well, it was supposed to. Then my plans changed, and now it
-only contains one example for that one article I wrote.
+This repository was supposed to provide examples of Embedded Rust applications
+using the Raspberry Pi Pico, to augment a website I was building. Then my plans
+changed, and I ended up focusing on other things.
+
+This repository now contains all the code I had for this, but I'm not going to
+expand on it.
 
 ## License
 
