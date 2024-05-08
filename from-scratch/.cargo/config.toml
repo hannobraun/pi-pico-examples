@@ -1,0 +1,13 @@
+# The RP2040 has an Arm Cortex-M0+ core, which makes the following the correct
+# target for the Rust compiler. We could also pass that manually each time, via
+# `--target`, but specifying it here is more convenient.
+[build]
+target = "thumbv6m-none-eabi"
+
+# The Rust compiler knows how to build binaries for many of its targets, but
+# microcontrollers tend to be a bit special and need special handling. We
+# provide that special handling in the linker script, but we need to tell the
+# compiler about it here.
+[target.thumbv6m-none-eabi]
+runner = "probe-rs run --chip=RP2040"
+rustflags = ["-C", "link-arg=-Tlink.ld"]
